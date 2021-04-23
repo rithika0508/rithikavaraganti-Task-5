@@ -21,7 +21,10 @@ app.post('/', upload.single('upload'), async (req, res) => {
     const image = new Image({ image: req.file.buffer })
     await image.save()
     sendEmail()
-    res.send('Image Uploaded :) ')
+    res.send({
+        messade:'Image Uploaded',
+        id:image._id
+    })
 }, (error, req, res, next) => {     res.send(error.message)
 })
 
