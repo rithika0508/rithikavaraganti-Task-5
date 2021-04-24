@@ -1,0 +1,14 @@
+https://rithika-gcc-task-5.herokuapp.com/
+
+POST Request -> Uploading a image
+    Endpoints -> /
+    Request example -> Uploading a image via formdata
+    Response example ->
+    {
+        "message":"Image Uploaded!",
+        "id":"6083c2a18d75650015103ba6"
+    }
+
+GET Request -> Reading the uploaded image
+    Endpoints -> /image/:id
+    Response -> image
